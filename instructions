@@ -1,0 +1,44 @@
+Background
+
+Attached are two datasets that represent user traffic through our life insurance product funnel.
+
+funnel_path.csv - Represents the steps each user got to in the product funnel. The product funnel consists of the following steps. The user sees these steps in this order:
+
+started_navigator - first step in the product funnel and everyone in this dataset sees this step. 
+collect_contact_info - this is where we ask for an email and phone number for identification and marketing purposes. 
+viewed_quotes - After presenting contact info, we are able to show customers quotes for life insurance. This is the first place they see pricing. 
+application_submit - After seeing quotes, customers can submit applications to move forward with their quotes. 
+phone_connect - Once a customer submits an application, the app is routed to a live insurance agent to call them and collect more detailed information to move them forward with the life insurance process. 
+sign_and_exam - For this purpose, this is the last step to analyze. This represents a customer moving forward the life insurance process and scheduling a medical exam. 
+These steps are provided to help us scope where we can implement product interventions to increase the pull through to sign and exam. 
+
+users.csv - This dataset provides information about the users moving through this process. Here are descriptions of the fields in the data set:
+
+user_id - the key that identifies the user. 
+age - how old the customer applying for life insurance is. 
+device - indicates the type of device a customer came in on. This allows you to differentiate between mobile and desktop and also what kind of mobile device (ios vs android)
+income - annual income as provided by the customer. 
+num_conditions - how many health conditions the customer has. 
+premium - the annual price for the lowest policy from the quotes provided to customers. This is what the customer will pay a year. 
+marketing_channels - the marketing channel the customer came from. 
+Please answer the questions below in either R or Python. Please export your results to a PDF and send in both the rendered PDF and the script to generate the PDF. Please include the code chunks in your rendered PDF with explanation and analysis based on the questions below. 
+
+Note: This analysis will also be the basis for your on site interview.
+
+Analysis
+
+We are interested in driving our decision making on what helps maximize our conversion. The two ways to improve conversion are to improve funnel flow or optimize marketing. With this in mind, you are working with the product and marketing team. Your goal is to provide recommendations or hypotheses to improve our conversion. 
+
+The first step in providing recommendations is to start with a high level analysis. (Please present this answer visually)
+How does our conversion rate change through the funnel overall and by marketing channels?
+The second step in providing recommendations is to look at conversion at a segment level through the funnel. (Approach this from a model based perspective)
+Which features are associated with people converting through the funnel?
+What hypotheses do you take away from the funnel and segmentation analysis above? 
+What recommendations would you make to the product team?
+How would you test your recommendations?
+What recommendations are likely to drive the largest impact?
+What are the caveats of your analysis?
+If you had more time and resources to develop this analysis further. 
+What additional attributes would you want to gain more insight about optimizing conversion? 
+What other ways could you expand this work?
+Please let me know when you'd be able to submit this by! Do not hesitate to reach out if you have any questions!
